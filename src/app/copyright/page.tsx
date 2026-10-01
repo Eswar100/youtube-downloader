@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Copyright Policy & DMCA | YouMate',
+  title: 'Copyright Policy & DMCA',
   description: 'YouMate copyright policy and DMCA takedown procedure. We respect intellectual property and respond promptly to valid DMCA notices.',
   alternates: { canonical: '/copyright' },
 };

@@ -3,7 +3,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | YouMate',
+  title: 'Contact Us',
   description: 'Get in touch with the YouMate team. Send feedback, report issues, or ask questions about our YouTube media tools.',
   alternates: { canonical: '/contact' },
 };

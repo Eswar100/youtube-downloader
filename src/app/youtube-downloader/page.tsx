@@ -43,7 +43,7 @@ export default function YouTubeDownloaderPage() {
       '@type': 'ListItem',
       position: i + 1,
       name: b.name,
-      item: `https://youmate.org${b.url}`,
+      item: `https://youtube-downloader-opal-two.vercel.app${b.url}`,
     })),
   };
 

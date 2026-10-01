@@ -4,7 +4,7 @@ import FaqAccordion from '@/components/FaqAccordion';
 import AdBanner from '@/components/AdBanner';
 
 export const metadata: Metadata = {
-  title: 'FAQ – Frequently Asked Questions | YouMate',
+  title: 'FAQ – Frequently Asked Questions',
   description:
     'Answers to the most common questions about YouMate: supported formats, download limits, legality, privacy, and more.',
   alternates: { canonical: '/faq' },

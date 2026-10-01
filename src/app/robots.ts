@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/'],
       },
     ],
-    sitemap: 'https://youmate.org/sitemap.xml',
-    host: 'https://youmate.org',
+    sitemap: 'https://youtube-downloader-opal-two.vercel.app/sitemap.xml',
+    host: 'https://youtube-downloader-opal-two.vercel.app',
   };
 }

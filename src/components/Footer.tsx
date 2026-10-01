@@ -35,7 +35,7 @@ export default function Footer() {
                 />
               </svg>
               <span>
-                Vid<span className="brand-accent">Pulse</span>
+                You<span className="brand-accent">Mate</span>
               </span>
             </Link>
             <p className="footer-brand-desc">
@@ -81,7 +81,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/how-to-download#qualities" className="footer-nav-link">
+                <Link href="/how-to-download" className="footer-nav-link">
                   Supported Resolutions
                 </Link>
               </li>

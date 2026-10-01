@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | YouMate',
+  title: 'Terms of Service',
   description: 'Read the YouMate Terms of Service. By using our YouTube media utility, you agree to these terms.',
   alternates: { canonical: '/terms' },
 };

@@ -18,7 +18,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: `https://youmate.org${item.url}`,
+      item: `https://youtube-downloader-opal-two.vercel.app${item.url}`,
     })),
   };
 

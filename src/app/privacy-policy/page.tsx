@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | YouMate',
+  title: 'Privacy Policy',
   description: 'Read the YouMate Privacy Policy to understand how we collect, use, and protect your data.',
   alternates: { canonical: '/privacy-policy' },
 };

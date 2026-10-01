@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const BASE_URL = 'https://youmate.org';
+const BASE_URL = 'https://youtube-downloader-opal-two.vercel.app';
 
 const routes = [
   { url: '/', priority: 1.0, changeFrequency: 'weekly' as const },

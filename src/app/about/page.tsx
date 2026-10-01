@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'About YouMate – YouTube Media Utility Tool',
+  title: 'About – YouTube Media Utility Tool',
   description:
     'Learn about YouMate, a fast, free, and privacy-focused YouTube media utility built for creators, researchers, and everyday users.',
   alternates: { canonical: '/about' },

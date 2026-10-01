@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Disclaimer | YouMate',
+  title: 'Disclaimer',
   description: 'YouMate disclaimer. Read important disclaimers about our YouTube media utility tool and your responsibilities as a user.',
   alternates: { canonical: '/disclaimer' },
 };

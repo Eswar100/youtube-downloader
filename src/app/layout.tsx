@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://youmate.org'),
+  metadataBase: new URL('https://youtube-downloader-opal-two.vercel.app'),
   title: {
     default: 'Free YouTube Downloader Online | Fast Video Download Tool - YouMate',
     template: '%s | YouMate',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: 'Free YouTube Downloader Online | Fast Video Download Tool - YouMate',
     description:
       'Process supported YouTube videos, audio streams, and high-resolution thumbnails quickly with YouMate. Clean, secure, and mobile-friendly.',
-    url: 'https://youmate.org',
+    url: 'https://youtube-downloader-opal-two.vercel.app',
     siteName: 'YouMate',
     locale: 'en_US',
     type: 'website',
@@ -67,11 +67,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'YouMate',
-    url: 'https://youmate.org',
+    url: 'https://youtube-downloader-opal-two.vercel.app',
     description: 'Fast and simple online utility for analyzing and downloading permitted YouTube video, audio, and thumbnail media.',
     potentialAction: {
       '@type': 'SearchAction',
-      target: { '@type': 'EntryPoint', urlTemplate: 'https://youmate.org/youtube-downloader?url={search_term_string}' },
+      target: { '@type': 'EntryPoint', urlTemplate: 'https://youtube-downloader-opal-two.vercel.app/youtube-downloader?url={search_term_string}' },
       'query-input': 'required name=search_term_string',
     },
   };
@@ -80,7 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'YouMate YouTube Downloader',
-    url: 'https://youmate.org',
+    url: 'https://youtube-downloader-opal-two.vercel.app',
     applicationCategory: 'MultimediaApplication',
     operatingSystem: 'All (Web-based)',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
