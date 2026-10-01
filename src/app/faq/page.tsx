@@ -11,50 +11,50 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'FAQ', href: '/faq' },
+  { name: 'Home', url: '/' },
+  { name: 'FAQ', url: '/faq' },
 ];
 
 const faqs = [
   {
-    q: 'Is YouMate free?',
-    a: 'Yes. All core features — video analysis, format selection, and downloading — are completely free with no registration.',
+    question: 'Is YouMate free?',
+    answer: 'Yes. All core features — video analysis, format selection, and downloading — are completely free with no registration.',
   },
   {
-    q: 'What YouTube URL formats are supported?',
-    a: 'Standard watch URLs (youtube.com/watch?v=...), Shorts (youtube.com/shorts/...), and short links (youtu.be/...) are all supported.',
+    question: 'What YouTube URL formats are supported?',
+    answer: 'Standard watch URLs (youtube.com/watch?v=...), Shorts (youtube.com/shorts/...), and short links (youtu.be/...) are all supported.',
   },
   {
-    q: 'What download formats does YouMate support?',
-    a: 'We support MP4 video (multiple resolutions up to 1080p), audio-only M4A/WebM streams, and JPEG thumbnail images.',
+    question: 'What download formats does YouMate support?',
+    answer: 'We support MP4 video (multiple resolutions up to 1080p), audio-only M4A/WebM streams, and JPEG thumbnail images.',
   },
   {
-    q: 'Is it legal to use YouMate?',
-    a: 'Using YouMate is legal for downloading content you own or have explicit permission to download (e.g., your own uploaded videos, Creative Commons content, or licensed material). Downloading copyrighted content without authorization is prohibited.',
+    question: 'Is it legal to use YouMate?',
+    answer: 'Using YouMate is legal for downloading content you own or have explicit permission to download (e.g., your own uploaded videos, Creative Commons content, or licensed material). Downloading copyrighted content without authorization is prohibited.',
   },
   {
-    q: 'Does YouMate store my downloads?',
-    a: 'No. Downloads are processed ephemerally in memory and temporary files are immediately deleted after being sent to your browser.',
+    question: 'Does YouMate store my downloads?',
+    answer: 'No. Downloads are processed ephemerally in memory and temporary files are immediately deleted after being sent to your browser.',
   },
   {
-    q: 'Why is the video not downloading?',
-    a: 'Some videos may be region-restricted, age-gated, private, or members-only. These cannot be downloaded through YouMate.',
+    question: 'Why is the video not downloading?',
+    answer: 'Some videos may be region-restricted, age-gated, private, or members-only. These cannot be downloaded through YouMate.',
   },
   {
-    q: 'Can I download 4K videos?',
-    a: '4K (2160p) streams exist on YouTube but are typically separate video-only streams that require merging with audio. This is supported where ffmpeg is available on our server.',
+    question: 'Can I download 4K videos?',
+    answer: '4K (2160p) streams exist on YouTube but are typically separate video-only streams that require merging with audio. This is supported where ffmpeg is available on our server.',
   },
   {
-    q: 'Does YouMate work on mobile?',
-    a: 'Yes. YouMate is fully responsive and works on iOS and Android mobile browsers.',
+    question: 'Does YouMate work on mobile?',
+    answer: 'Yes. YouMate is fully responsive and works on iOS and Android mobile browsers.',
   },
   {
-    q: 'Why does the thumbnail show a black image?',
-    a: 'YouTube does not always generate a "maxresdefault" thumbnail for every video. In that case, select the HQ or MQ thumbnail instead.',
+    question: 'Why does the thumbnail show a black image?',
+    answer: 'YouTube does not always generate a "maxresdefault" thumbnail for every video. In that case, select the HQ or MQ thumbnail instead.',
   },
   {
-    q: 'How do I report a problem or give feedback?',
-    a: 'Please use the Contact page to send us your feedback or report issues. We read every message.',
+    question: 'How do I report a problem or give feedback?',
+    answer: 'Please use the Contact page to send us your feedback or report issues. We read every message.',
   },
 ];
 
@@ -62,10 +62,10 @@ export default function FAQPage() {
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: faqs.map(({ q, a }) => ({
+    mainEntity: faqs.map(({ question, answer }) => ({
       '@type': 'Question',
-      name: q,
-      acceptedAnswer: { '@type': 'Answer', text: a },
+      name: question,
+      acceptedAnswer: { '@type': 'Answer', text: answer },
     })),
   };
 
@@ -80,7 +80,7 @@ export default function FAQPage() {
         </div>
       </section>
 
-      <AdBanner slot="faq-top" />
+      <AdBanner slotType="leaderboard" />
 
       <section className="content-section">
         <div className="container content-narrow">

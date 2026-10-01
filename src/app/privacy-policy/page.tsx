@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'Privacy Policy', href: '/privacy-policy' },
+  { name: 'Home', url: '/' },
+  { name: 'Privacy Policy', url: '/privacy-policy' },
 ];
 
 export default function PrivacyPolicyPage() {

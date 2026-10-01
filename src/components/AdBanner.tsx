@@ -5,7 +5,10 @@ export interface AdBannerProps {
   className?: string;
 }
 
-export default function AdBanner({ slotType, className = '' }: AdBannerProps) {
+export default function AdBanner({
+  slotType,
+  className = '',
+}: AdBannerProps) {
   const getSlotDetails = () => {
     switch (slotType) {
       case 'leaderboard':
@@ -14,12 +17,14 @@ export default function AdBanner({ slotType, className = '' }: AdBannerProps) {
           sizeNote: 'Standard leaderboard display slot',
           wrapperClass: 'leaderboard',
         };
+
       case 'rectangle':
         return {
           title: 'Content Medium Rectangle (336x280 / 300x250)',
           sizeNote: 'High-engagement editorial ad slot',
           wrapperClass: 'rectangle',
         };
+
       case 'mobile-banner':
       default:
         return {
@@ -39,13 +44,28 @@ export default function AdBanner({ slotType, className = '' }: AdBannerProps) {
       role="complementary"
     >
       <span className="ad-slot-label">Advertisement</span>
+
       <div
         className={`ad-slot-box ${details.wrapperClass}`}
         data-adsense-ready="true"
         data-slot-format={slotType}
       >
-        <span style={{ fontWeight: 600, fontSize: '0.85rem' }}>{details.title}</span>
-        <span style={{ fontSize: '0.75rem', opacity: 0.7, marginTop: '4px' }}>
+        <span
+          style={{
+            fontWeight: 600,
+            fontSize: '0.85rem',
+          }}
+        >
+          {details.title}
+        </span>
+
+        <span
+          style={{
+            fontSize: '0.75rem',
+            opacity: 0.7,
+            marginTop: '4px',
+          }}
+        >
           {details.sizeNote}
         </span>
       </div>

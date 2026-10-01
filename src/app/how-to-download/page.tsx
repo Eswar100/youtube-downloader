@@ -11,22 +11,22 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'How to Download', href: '/how-to-download' },
+  { name: 'Home', url: '/' },
+  { name: 'How to Download', url: '/how-to-download' },
 ];
 
 const faqs = [
   {
-    q: 'Do I need to install any software?',
-    a: 'No. YouMate is entirely web-based. You just need a modern browser and an internet connection.',
+    question: 'Do I need to install any software?',
+    answer: 'No. YouMate is entirely web-based. You just need a modern browser and an internet connection.',
   },
   {
-    q: 'Does it work on iPhone and Android?',
-    a: 'Yes. YouMate is fully responsive and works on all mobile browsers.',
+    question: 'Does it work on iPhone and Android?',
+    answer: 'Yes. YouMate is fully responsive and works on all mobile browsers.',
   },
   {
-    q: 'How long does a download take?',
-    a: 'Analysis takes 1–3 seconds. The download speed depends on your internet connection and the video file size.',
+    question: 'How long does a download take?',
+    answer: 'Analysis takes 1–3 seconds. The download speed depends on your internet connection and the video file size.',
   },
 ];
 
@@ -43,7 +43,7 @@ export default function HowToDownloadPage() {
         </div>
       </section>
 
-      <AdBanner slot="how-to-top" />
+      <AdBanner slotType="leaderboard" />
 
       <section className="content-section">
         <div className="container content-narrow">
@@ -99,7 +99,7 @@ export default function HowToDownloadPage() {
         </div>
       </section>
 
-      <AdBanner slot="how-to-mid" />
+      <AdBanner slotType="rectangle" />
 
       <section className="faq-section">
         <div className="container content-narrow">

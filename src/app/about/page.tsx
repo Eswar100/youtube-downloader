@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
+  { name: 'Home', url: '/' },
+  { name: 'About', url: '/about' },
 ];
 
 export default function AboutPage() {

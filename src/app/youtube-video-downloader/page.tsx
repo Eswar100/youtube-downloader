@@ -12,22 +12,22 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'YouTube Video Downloader', href: '/youtube-video-downloader' },
+  { name: 'Home', url: '/' },
+  { name: 'YouTube Video Downloader', url: '/youtube-video-downloader' },
 ];
 
 const faqs = [
   {
-    q: 'What video qualities are supported?',
-    a: 'Depending on what the video uploader published, you can download in 1080p, 720p, 480p, 360p, or lower. 4K/2K may also be available via separate video-only streams.',
+    question: 'What video qualities are supported?',
+    answer: 'Depending on what the video uploader published, you can download in 1080p, 720p, 480p, 360p, or lower. 4K/2K may also be available via separate video-only streams.',
   },
   {
-    q: 'Can I download YouTube Shorts?',
-    a: 'Yes! YouTube Shorts URLs (youtube.com/shorts/...) are fully supported.',
+    question: 'Can I download YouTube Shorts?',
+    answer: 'Yes! YouTube Shorts URLs (youtube.com/shorts/...) are fully supported.',
   },
   {
-    q: 'Will the downloaded video have a watermark?',
-    a: 'No. YouMate downloads the original stream directly — no watermarks are added.',
+    question: 'Will the downloaded video have a watermark?',
+    answer: 'No. YouMate downloads the original stream directly — no watermarks are added.',
   },
 ];
 
@@ -46,11 +46,11 @@ export default function YouTubeVideoDownloaderPage() {
 
       <section className="tool-section">
         <div className="container">
-          <AnalyzerTool defaultTab="video" />
+          <AnalyzerTool />
         </div>
       </section>
 
-      <AdBanner slot="yt-video-downloader-mid" />
+      <AdBanner slotType="rectangle" />
 
       <section className="content-section">
         <div className="container content-narrow">

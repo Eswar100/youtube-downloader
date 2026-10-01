@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'Disclaimer', href: '/disclaimer' },
+  { name: 'Home', url: '/' },
+  { name: 'Disclaimer', url: '/disclaimer' },
 ];
 
 export default function DisclaimerPage() {

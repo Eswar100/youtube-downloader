@@ -26,20 +26,40 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
     <nav className="breadcrumbs-nav" aria-label="Breadcrumb">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaList) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schemaList),
+        }}
       />
+
       <ol className="breadcrumbs-list">
         {items.map((item, index) => {
           const isLast = index === items.length - 1;
+
           return (
-            <li key={item.url} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-              {index > 0 && <span className="breadcrumb-separator">/</span>}
+            <li
+              key={item.url}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+              }}
+            >
+              {index > 0 && (
+                <span className="breadcrumb-separator">/</span>
+              )}
+
               {isLast ? (
-                <span className="breadcrumb-current" aria-current="page">
+                <span
+                  className="breadcrumb-current"
+                  aria-current="page"
+                >
                   {item.name}
                 </span>
               ) : (
-                <Link href={item.url} style={{ color: 'var(--text-secondary)' }}>
+                <Link
+                  href={item.url}
+                  style={{ color: 'var(--text-secondary)' }}
+                >
                   {item.name}
                 </Link>
               )}

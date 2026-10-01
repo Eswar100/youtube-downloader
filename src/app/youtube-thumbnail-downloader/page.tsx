@@ -12,22 +12,22 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'YouTube Thumbnail Downloader', href: '/youtube-thumbnail-downloader' },
+  { name: 'Home', url: '/' },
+  { name: 'YouTube Thumbnail Downloader', url: '/youtube-thumbnail-downloader' },
 ];
 
 const faqs = [
   {
-    q: 'What thumbnail resolutions are available?',
-    a: 'We provide all 4 YouTube thumbnail sizes: Max (1280×720), HQ (480×360), MQ (320×180), and SD (120×90).',
+    question: 'What thumbnail resolutions are available?',
+    answer: 'We provide all 4 YouTube thumbnail sizes: Max (1280×720), HQ (480×360), MQ (320×180), and SD (120×90).',
   },
   {
-    q: 'Can I use downloaded thumbnails in my projects?',
-    a: 'Thumbnails are subject to the copyright of the original video creator. Only use them where you have permission.',
+    question: 'Can I use downloaded thumbnails in my projects?',
+    answer: 'Thumbnails are subject to the copyright of the original video creator. Only use them where you have permission.',
   },
   {
-    q: 'Why does "Max Resolution" show a black image for some videos?',
-    a: 'Not all videos have a maxresdefault thumbnail uploaded. In that case, use the HQ version instead.',
+    question: 'Why does "Max Resolution" show a black image for some videos?',
+    answer: 'Not all videos have a maxresdefault thumbnail uploaded. In that case, use the HQ version instead.',
   },
 ];
 
@@ -50,7 +50,7 @@ export default function YouTubeThumbnailDownloaderPage() {
         </div>
       </section>
 
-      <AdBanner slot="thumbnail-mid" />
+      <AdBanner slotType="rectangle" />
 
       <section className="content-section">
         <div className="container content-narrow">

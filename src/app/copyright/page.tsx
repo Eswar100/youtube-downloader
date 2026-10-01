@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'Copyright Policy', href: '/copyright' },
+  { name: 'Home', url: '/' },
+  { name: 'Copyright Policy', url: '/copyright' },
 ];
 
 export default function CopyrightPage() {

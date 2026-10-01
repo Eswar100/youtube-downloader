@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'Terms of Service', href: '/terms' },
+  { name: 'Home', url: '/' },
+  { name: 'Terms of Service', url: '/terms' },
 ];
 
 export default function TermsPage() {

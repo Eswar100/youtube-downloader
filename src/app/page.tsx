@@ -92,7 +92,7 @@ export default function HomePage() {
       </section>
 
       {/* AD BANNER */}
-      <AdBanner slot="homepage-top" className={styles.adSection} />
+      <AdBanner slotType="leaderboard" className={styles.adSection} />
 
       {/* FEATURES */}
       <section className={styles.features} aria-labelledby="features-heading">
@@ -156,7 +156,7 @@ export default function HomePage() {
       </section>
 
       {/* AD BANNER */}
-      <AdBanner slot="homepage-mid" className={styles.adSection} />
+      <AdBanner slotType="rectangle" className={styles.adSection} />
 
       {/* TOOLS GRID */}
       <section className={styles.toolsSection} aria-labelledby="tools-heading">

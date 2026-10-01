@@ -12,26 +12,26 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'YouTube Downloader', href: '/youtube-downloader' },
+  { name: 'Home', url: '/' },
+  { name: 'YouTube Downloader', url: '/youtube-downloader' },
 ];
 
 const faqs = [
   {
-    q: 'Can I download any YouTube video?',
-    a: 'You can only download videos you own or have explicit permission to download. This tool respects copyright and YouTube ToS.',
+    question: 'Can I download any YouTube video?',
+    answer: 'You can only download videos you own or have explicit permission to download. This tool respects copyright and YouTube ToS.',
   },
   {
-    q: 'What is the best quality available?',
-    a: 'Most publicly available YouTube videos can be downloaded in up to 1080p MP4 where a progressive stream exists.',
+    question: 'What is the best quality available?',
+    answer: 'Most publicly available YouTube videos can be downloaded in up to 1080p MP4 where a progressive stream exists.',
   },
   {
-    q: 'Does YouMate store my downloads?',
-    a: 'No. All processing is ephemeral. Files are never stored permanently on our servers.',
+    question: 'Does YouMate store my downloads?',
+    answer: 'No. All processing is ephemeral. Files are never stored permanently on our servers.',
   },
   {
-    q: 'Is there a download limit?',
-    a: 'There are no hard limits for personal use, but please use responsibly.',
+    question: 'Is there a download limit?',
+    answer: 'There are no hard limits for personal use, but please use responsibly.',
   },
 ];
 
@@ -42,8 +42,8 @@ export default function YouTubeDownloaderPage() {
     itemListElement: breadcrumbs.map((b, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      name: b.label,
-      item: `https://youmate.org${b.href}`,
+      name: b.name,
+      item: `https://youmate.org${b.url}`,
     })),
   };
 
@@ -66,7 +66,7 @@ export default function YouTubeDownloaderPage() {
         </div>
       </section>
 
-      <AdBanner slot="yt-downloader-mid" />
+      <AdBanner slotType="rectangle" />
 
       <section className="content-section">
         <div className="container content-narrow">

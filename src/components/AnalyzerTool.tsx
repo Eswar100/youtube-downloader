@@ -45,8 +45,12 @@ export default function AnalyzerTool({ initialUrl = '', autoFocus = false }: Ana
       }
 
       setResult(json.data);
-    } catch (err: any) {
-      setError(err?.message || 'A network error occurred while processing the request.');
+    } catch (err: unknown) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : 'A network error occurred while processing the request.'
+      );
     } finally {
       setLoading(false);
     }
