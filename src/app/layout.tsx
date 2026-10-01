@@ -91,6 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebsite) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebApp) }} />
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5615395817672786" crossOrigin="anonymous"></script>
       </head>
       <body>
         <Navbar />
